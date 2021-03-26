@@ -1,7 +1,7 @@
 {
   "name": "mern-back-end",
   "version": "1.0.0",
-  "description": "This is backend of ecommerce flipkart clone project",
+  "description": "This is backend of ecommerce project",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.server.js"
@@ -14,7 +14,7 @@
     "api",
     "api"
   ],
-  "author": "Rizwan Khan",
+  "author": "S4tech",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.809.0",
