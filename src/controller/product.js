@@ -11,7 +11,7 @@ exports.createProduct = (req, res) => {
 
   if (req.files.length > 0) {
     productPictures = req.files.map((file) => {
-      return { img: file.location };
+      return { img: file.filename };
     });
   }
 
@@ -26,7 +26,7 @@ exports.createProduct = (req, res) => {
     createdBy: req.user._id,
   });
 
-  product.save.exec((error, product) => {
+  product.save((error, product) => {
     if (error) return res.status(400).json({ error });
     if (product) {
       res.status(201).json({ product, files: req.files });
